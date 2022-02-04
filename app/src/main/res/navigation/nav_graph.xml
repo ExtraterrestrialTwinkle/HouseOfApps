@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/postsFragment">
+
+    <fragment
+        android:id="@+id/postsFragment"
+        android:name="com.siuzannasmolianinova.houseofapps.presentation.fragments.PostsFragment"
+        android:label="PostsFragment"
+        tools:layout="@layout/fragment_posts">
+        <action
+            android:id="@+id/action_postsFragment_to_commentsFragment"
+            app:destination="@id/commentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/albumsFragment"
+        android:name="com.siuzannasmolianinova.houseofapps.presentation.fragments.AlbumsFragment"
+        android:label="AlbumsFragment"
+        tools:layout="@layout/fragment_albums">
+        <action
+            android:id="@+id/action_albumsFragment_to_photosFragment"
+            app:destination="@id/photosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentsFragment"
+        android:name="com.siuzannasmolianinova.houseofapps.presentation.fragments.CommentsFragment"
+        android:label="CommentsFragment" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.siuzannasmolianinova.houseofapps.presentation.fragments.PhotosFragment"
+        android:label="PhotosFragment" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+</navigation>
