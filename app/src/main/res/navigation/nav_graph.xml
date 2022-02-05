@@ -26,17 +26,37 @@
     <fragment
         android:id="@+id/commentsFragment"
         android:name="com.siuzannasmolianinova.houseofapps.presentation.fragments.CommentsFragment"
-        android:label="CommentsFragment" >
+        android:label="CommentsFragment">
         <argument
             android:name="id"
             app:argType="long" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="body"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/photosFragment"
         android:name="com.siuzannasmolianinova.houseofapps.presentation.fragments.PhotosFragment"
-        android:label="PhotosFragment" >
+        android:label="PhotosFragment">
         <argument
             android:name="id"
             app:argType="long" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_photosFragment_to_bigPhotoFragment"
+            app:destination="@id/bigPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bigPhotoFragment"
+        android:name="com.siuzannasmolianinova.houseofapps.presentation.fragments.BigPhotoFragment"
+        android:label="BigPhotoFragment">
+        <argument
+            android:name="url"
+            app:argType="string" />
     </fragment>
 </navigation>

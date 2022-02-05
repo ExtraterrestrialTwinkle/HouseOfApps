@@ -9,18 +9,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/name"
-        android:textSize="?attr/textAppearanceHeadline6"/>
+        android:textSize="16sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/email"
-        android:textSize="?attr/textAppearanceBody2"/>
+        android:textSize="12sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/commentBody"
-        android:textSize="?attr/textAppearanceBody1"/>
+        android:textSize="16sp"/>
 
 </LinearLayout>

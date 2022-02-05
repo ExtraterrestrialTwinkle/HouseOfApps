@@ -9,7 +9,10 @@ import retrofit2.http.Query
 
 interface Api {
     @GET("/posts?_start=0&_limit=20")
-    suspend fun loadPosts(): List<Post>
+    suspend fun loadPosts(
+        @Query("start") page: Int,
+        @Query("limit") size: Int
+    ): List<Post>
 
     @GET("/comments")
     suspend fun loadComments(

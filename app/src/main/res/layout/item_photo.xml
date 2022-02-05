@@ -27,11 +27,10 @@
 
         <TextView
             android:id="@+id/titleTextView"
-            style="?attr/textAppearanceHeadline6"
+            style="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColor="?attr/colorOnPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageView"

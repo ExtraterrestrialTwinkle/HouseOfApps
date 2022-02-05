@@ -7,9 +7,11 @@ import com.siuzannasmolianinova.houseofapps.data.entity.Photo
 import com.siuzannasmolianinova.houseofapps.databinding.ItemPhotoBinding
 import com.xwray.groupie.viewbinding.BindableItem
 
-class PhotoItem(private val photo: Photo) : BindableItem<ItemPhotoBinding>() {
+class PhotoItem(private val photo: Photo, private val onItemClick: (Photo) -> Unit) :
+    BindableItem<ItemPhotoBinding>() {
 
     override fun bind(binding: ItemPhotoBinding, position: Int) {
+        binding.root.setOnClickListener { onItemClick(photo) }
         binding.titleTextView.text = photo.title
         Glide.with(binding.imageView)
             .load(photo.thumbnailUrl)
@@ -23,4 +25,6 @@ class PhotoItem(private val photo: Photo) : BindableItem<ItemPhotoBinding>() {
     override fun initializeViewBinding(view: View): ItemPhotoBinding {
         return ItemPhotoBinding.bind(view)
     }
+
+    override fun getSpanSize(spanCount: Int, position: Int): Int = spanCount / 3
 }

@@ -6,9 +6,11 @@ import com.siuzannasmolianinova.houseofapps.data.entity.Album
 import com.siuzannasmolianinova.houseofapps.databinding.ItemAlbumBinding
 import com.xwray.groupie.viewbinding.BindableItem
 
-class AlbumItem(private val album: Album) : BindableItem<ItemAlbumBinding>() {
+class AlbumItem(private val album: Album, private val onItemClick: (Album) -> Unit) :
+    BindableItem<ItemAlbumBinding>() {
 
     override fun bind(binding: ItemAlbumBinding, position: Int) {
+        binding.root.setOnClickListener { onItemClick(album) }
         binding.albumTitle.text = album.title
     }
 

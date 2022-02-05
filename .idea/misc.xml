@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/divider.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_albums.xml" value="0.22192028985507245" />
+        <entry key="app/src/main/res/layout/fragment_big_photo.xml" value="0.22192028985507245" />
+        <entry key="app/src/main/res/layout/fragment_comments.xml" value="0.22192028985507245" />
+        <entry key="app/src/main/res/layout/fragment_photos.xml" value="0.22192028985507245" />
+        <entry key="app/src/main/res/layout/fragment_posts.xml" value="0.18568840579710144" />
+        <entry key="app/src/main/res/layout/item_album.xml" value="0.22192028985507245" />
+        <entry key="app/src/main/res/layout/item_comment.xml" value="0.22192028985507245" />
+        <entry key="app/src/main/res/layout/item_photo.xml" value="0.22192028985507245" />
+        <entry key="app/src/main/res/layout/item_post.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

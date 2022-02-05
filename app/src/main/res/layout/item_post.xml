@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/postTitle"
         tools:text="@string/lorem"
-        android:textSize="?attr/textAppearanceHeadline6"/>
+        android:textSize="20sp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -19,6 +19,6 @@
         android:maxLines="6"
         android:id="@+id/postBody"
         tools:text="@string/lorem_extended"
-        android:textSize="?attr/textAppearanceBody2"/>
+        android:textSize="16sp"/>
 
 </LinearLayout>
